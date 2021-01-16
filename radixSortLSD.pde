@@ -1,4 +1,4 @@
-int[] radixLSDsort(int[] array) {
+int[] radixLSDsortSlow(int[] array) {
   String[] sortSec = new String[array.length];
   int largest = 0;
   for (int i = 0; i < array.length; i++) {
