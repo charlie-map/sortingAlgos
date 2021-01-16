@@ -22,10 +22,8 @@ int[] radixLSDsortSlow(int[] array) {
     newArr = countSort(newArr);
     //working here now to see what's being returned:
     String[] newSort = new String[array.length];
-    char[][] currentInd = new char[sortSec.length][largest];
     for (int j = 0; j < newArr.length; j++) {
-      currentInd[j] = sortSec[newArr[j][0]].toCharArray();
-      newSort[j] = new String(currentInd[j]);
+      newSort[j] = sortSec[newArr[j][0]];
     }
     for (int j = 0; j < newArr.length; j++) {
       sortSec[j] = newSort[j];
